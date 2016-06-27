@@ -21,6 +21,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -35,17 +36,45 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:parentActivityName=".MainActivity"
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps">
+            <!-- soporte versiones anteriores a andorid 4 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cristian.mismapasnew.MainActivity" />
+        </activity>
         <activity
+            android:parentActivityName=".MainActivity"
             android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2" />
+            android:label="@string/title_activity_maps2">
+            <!-- soporte versiones anteriores a andorid 4 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cristian.mismapasnew.MainActivity" />
+        </activity>
+
         <activity
+            android:parentActivityName=".MainActivity"
             android:name=".MapsActivity3"
-            android:label="@string/title_activity_maps3" />
+            android:label="@string/title_activity_maps3">
+            <!-- soporte versiones anteriores a andorid 4 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cristian.mismapasnew.MainActivity" />
+        </activity>
+
         <activity
+            android:parentActivityName=".MainActivity"
             android:name=".MapsActivity4"
-            android:label="@string/title_activity_maps4"></activity>
+            android:label="@string/title_activity_maps4">
+            <!-- soporte versiones anteriores a andorid 4 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cristian.mismapasnew.MainActivity" />
+        </activity>
+
+
     </application>
 
 </manifest>
